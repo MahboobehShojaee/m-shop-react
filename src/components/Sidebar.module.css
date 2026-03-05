@@ -1,0 +1,96 @@
+.sidebar {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: 250px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  color: #2d3a22;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.categoryList {
+  list-style: none;
+  padding: 0;
+}
+
+.categoryItem,
+.selected {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.categoryItem:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateX(5px);
+  color: #000;
+}
+
+.selected {
+  background: #2d3a22;
+  color: #fff !important;
+  box-shadow: 0 8px 15px rgba(45, 58, 34, 0.2);
+}
+
+.colorDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.all {
+  background-color: #333;
+}
+.electronics {
+  background-color: #f4b13e;
+}
+.jewelery {
+  background-color: #e07a5f;
+}
+.mensclothing {
+  background-color: #81b29a;
+}
+.womensclothing {
+  background-color: #9d8189;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    top: 0;
+    margin-bottom: 30px;
+  }
+  .categoryList {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  .categoryItem,
+  .selected {
+    white-space: nowrap;
+    margin-bottom: 0;
+  }
+}

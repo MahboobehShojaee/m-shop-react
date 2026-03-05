@@ -1,0 +1,88 @@
+.pageWrapper {
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 0 40px;
+  min-height: 80vh;
+}
+
+.pageHeader {
+  margin-bottom: 40px;
+}
+
+.pageHeader h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #2d3a22;
+  margin-bottom: 10px;
+}
+
+.pageHeader p {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.products {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebarWrapper {
+  width: 380px;
+  position: sticky;
+  top: 120px;
+}
+
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+}
+
+.emptyIcon {
+  font-size: 5rem;
+  color: #d4c8a5;
+  margin-bottom: 20px;
+}
+
+.emptyContainer h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.shopBtn {
+  margin-top: 30px;
+  background: #2d3a22;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.shopBtn:hover {
+  background: #1a1a1a;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebarWrapper {
+    width: 100%;
+    position: static;
+  }
+}

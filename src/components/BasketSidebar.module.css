@@ -1,0 +1,173 @@
+.sidebar {
+  background: #f4f1ea;
+  padding: 50px 40px;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.topSection {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  color: #2d3a22;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.divider {
+  width: 40px;
+  height: 3px;
+  background: #f4b13e;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #8c8a84;
+  font-weight: 600;
+}
+
+.value {
+  font-size: 1.2rem;
+  color: #2d3a22;
+  font-weight: 500;
+}
+
+.totalValue {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.checkoutBtn {
+  background: #2d3a22;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px 12px 12px 30px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.iconCircle {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  transition: all 0.4s ease;
+}
+
+.checkoutBtn:hover {
+  background: #1a1a1a;
+  padding-left: 40px;
+}
+
+.checkoutBtn:hover .iconCircle {
+  background: #f4b13e;
+  color: #1a1a1a;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    padding: 35px;
+    border-radius: 45px;
+  }
+}
+
+.statusRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.statusBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.statusBadge p {
+  font-size: 0.85rem;
+  color: #2d3a22;
+  font-weight: 500;
+  margin: 0;
+}
+
+.pulseDot {
+  width: 8px;
+  height: 8px;
+  background-color: #f4b13e;
+  border-radius: 50%;
+  position: relative;
+}
+
+.pulseDot::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 50%;
+  animation: pulse 1.5s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.checkIcon {
+  color: #81b29a;
+  font-size: 1.1rem;
+}

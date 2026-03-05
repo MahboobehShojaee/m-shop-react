@@ -1,0 +1,163 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  justify-content: space-between;
+  min-height: 420px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 10px 15px -3px rgba(0, 0, 0, 0.02);
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.07),
+    0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(240, 240, 240, 0.5)
+  );
+}
+
+.productImg {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  z-index: 2;
+  transition: transform 0.5s ease;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
+}
+
+.card:hover .productImg {
+  transform: scale(1.1) rotate(3deg);
+}
+.detailBtn {
+  display: none;
+}
+
+.detailLinkWrapper {
+  text-decoration: none;
+  color: inherit;
+}
+
+.details h3 {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.detailIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #c0c0c0;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+.detailLinkWrapper:hover h3 {
+  color: #2d3a22;
+}
+
+.detailLinkWrapper:hover .detailIcon {
+  color: #2d3a22;
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+.price {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 400;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.addButton {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.addButton:hover {
+  background: #2d3a22;
+  transform: rotate(90deg);
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 5px 8px;
+  border-radius: 30px;
+  border: 1px solid #eee;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+  gap: 15px;
+}
+
+.controlBtn {
+  background: #f8f8f8;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.controlBtn:hover {
+  background: #e0e0e0;
+}
+
+.quantity {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1a1a1a;
+  min-width: 20px;
+  text-align: center;
+}
