@@ -1,4 +1,4 @@
-# M Shop - Zest Edition 🍋
+# M Shop - React & Redux
 
 A modern, high-end e-commerce concept built with **React**, **Redux Toolkit**, and **CSS Modules**. 
 
